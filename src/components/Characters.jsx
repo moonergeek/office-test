@@ -18,6 +18,7 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
+  Box,
 } from "@chakra-ui/react";
 
 const Characters = () => {
@@ -33,7 +34,7 @@ const Characters = () => {
   if (error) return "An error has occurred: " + error.message;
 
   return (
-    <>
+    <Box width="80%" borderRadius={2} mx="auto" bg="">
       <TableContainer>
         <Table variant="simple">
           <TableCaption>Users of the office</TableCaption>
@@ -77,7 +78,7 @@ const Characters = () => {
           </ModalContent>
         </Modal>
       ))}
-    </>
+    </Box>
   );
 };
 
